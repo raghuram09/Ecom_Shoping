@@ -1,0 +1,29 @@
+        <Box>
+          <IconButton onClick={() => setOpenMenu(true)} sx={{ ml: 'auto' }}>
+            <RiApps2Line color='black' />
+          </IconButton>
+          <Drawer open={openMenu} onClose={() => setOpenMenu(false)}>
+            <List component="nav" sx={{ backgroundColor: 'red' }}>
+              <ListItemButton onClick={closeHandler}>
+                <HomeIcon />
+                <ListItemText id="side-titel">Home</ListItemText>
+              </ListItemButton>
+              <ListItemButton onClick={closeHandler}>
+                <CategoryIcon />
+                <ListItemText id="side-titel">Category</ListItemText>
+              </ListItemButton>
+              <ListItemButton onClick={closeHandler}>
+                <HomeIcon />
+                <ListItemText id="side-titel">Cart</ListItemText>
+              </ListItemButton>
+              <ListItemButton onClick={closeHandler}>
+                <HomeIcon />
+                <ListItemText id="side-titel">You</ListItemText>
+              </ListItemButton>
+              <Button sx={{ color: 'black' }} onClick={closeHandler}>
+                <AccountCircleIcon />
+                Login
+              </Button>
+            </List>
+          </Drawer>
+        </Box>

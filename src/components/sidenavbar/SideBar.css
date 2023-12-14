@@ -1,0 +1,15 @@
+#side-titel{
+    color:white;
+}
+
+#logo{
+    position: relative;
+    border: 5px solid black;
+    border-radius: 50%;
+    top: -20px;
+    left: 35px
+}
+.css-4t3x6l-MuiPaper-root-MuiDrawer-paper{
+    background-color: red !important;
+    border-top-right-radius: 25px;
+}
