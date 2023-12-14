@@ -22,11 +22,11 @@ const SideNavBar = () => {
   };
   return (
     <React.Fragment>
-      <Box sx={{ display: 'flex', flexDirection: 'row', margin: '0 20px' }}>
+      <Box sx={{ display: 'flex', flexDirection: 'row', margin: '0 20px', justifyContent: 'space-between' }}>
         <Box marginTop='30px'>
           <Typography
             sx={{
-              width: '600px',
+              width: '750px',
               height: '80px',
               backgroundColor: 'red',
               borderRadius: '20px',
@@ -44,7 +44,7 @@ const SideNavBar = () => {
           justifyContent={'center'}
           alignContent={'center'}
         >
-          <IconButton onClick={() => setOpenMenu(true)} sx={{ width: '70px' }}>
+          <IconButton onClick={() => setOpenMenu(true)} sx={{ width: '80px' }}>
             <RiApps2Line className='menu' color='black' />
           </IconButton>
           <Drawer className='drawer' open={openMenu} onClose={() => setOpenMenu(false)} sx={{ Color: 'red' }}>
