@@ -1,6 +1,8 @@
 
 import { Box } from '@mui/material'
 import NavBar from '../navbar/NavBar'
+import HeroSection from '../herosection/HeroSection'
+import MainCard from '../card/MainCard'
 
 const Home = () => {
     return (
@@ -8,9 +10,12 @@ const Home = () => {
             <nav>
                 <NavBar />
             </nav>
-            <main>
-                <h1>Welcome to the home page!</h1>
-            </main>
+            <section>
+                <HeroSection />
+            </section>
+            <section>
+                <MainCard />
+            </section>
         </Box>
     )
 }

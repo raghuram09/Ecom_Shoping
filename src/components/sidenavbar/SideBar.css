@@ -3,11 +3,15 @@
 }
 
 #logo{
-    position: relative;
+    position: absolute;
     border: 5px solid black;
     border-radius: 50%;
-    top: -20px;
-    left: 35px
+    top: 15px;
+    left: 45px
+}
+.menu{
+    width: 40px;
+    height:40px;
 }
 .css-4t3x6l-MuiPaper-root-MuiDrawer-paper{
     background-color: red !important;
